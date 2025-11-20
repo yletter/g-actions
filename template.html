@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YAML to HTML</title>
+</head>
+<body>
+    <h1>Data from YAML</h1>
+    <ul>
+        {% for key, value in data.items() %}
+        <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
