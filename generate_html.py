@@ -12,7 +12,9 @@ env = Environment(loader=FileSystemLoader('.'))
 template = env.get_template('template.html')
 
 # Render HTML
-output = template.render(data=data)
+output = template.render(data=data["data"])
+
+print(output)
 
 # Generate timestamped filename
 timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
