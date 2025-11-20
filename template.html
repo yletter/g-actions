@@ -34,15 +34,15 @@
                 <th>Notes</th>
             </tr>
         </thead>
-<tbody>
-{% for item in data %}
-    <tr>
-        <td>{{ item.name }}</td>
-        <td>{{ item.step_description }}</td>
-        <td>{{ item.notes }}</td>
-    </tr>
-{% endfor %}
-</tbody>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.step_description }}</td>
+                <td>{{ item.notes }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </body>
 </html>
