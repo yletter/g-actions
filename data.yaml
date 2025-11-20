@@ -1,4 +1,12 @@
-title: Sample YAML Data
-author: Jane Doe
-date: 2025-11-21
-description: This is a sample YAML file to demonstrate GitHub Actions automation.
+data:
+  - name: Alice
+    step_description: Initialize the environment and install dependencies
+    notes: Ensure Python 3.11 is used
+
+  - name: Bob
+    step_description: Run the YAML-to-HTML conversion script
+    notes: Use the latest data.yaml file
+
+  - name: Charlie
+    step_description: Commit and push the generated HTML file
+    notes: Use timestamped filename format
