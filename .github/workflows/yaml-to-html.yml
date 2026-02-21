@@ -40,9 +40,9 @@ jobs:
           LEVEL: ${{ vars.LEVEL || 'PATCH' }}
         run: |
           # Get all tags sorted by version
-          git tag -l 'v*' --sort=-version:refname --merged HEAD
-          git tag -l 'v*' --sort=-version:refname --merged HEAD | head -n 1
-          LATEST_TAG=$(git tag -l 'v*' --sort=-version:refname --merged HEAD | head -n 1)
+          git tag -l v* --sort=-version:refname --merged HEAD
+          git tag -l v* --sort=-version:refname --merged HEAD | head -n 1
+          LATEST_TAG=$(git tag -l v* --sort=-version:refname --merged HEAD | head -n 1)
           
           if [ -z "$LATEST_TAG" ]; then
             LATEST_TAG="v0.0.0"
