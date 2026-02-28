@@ -9,6 +9,9 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform   # all run steps will execute here
 
     permissions:
       id-token: write   # required for OIDC
